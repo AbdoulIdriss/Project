@@ -1,0 +1,48 @@
+.recommendations {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+.recommended-books {
+    width: 100%;
+    display: flex;
+    // grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid white;
+    row-gap: 10px;
+
+    div {
+
+        // display: 
+    
+        a {
+            text-decoration: none;
+            // display: flex;
+            margin: auto 32px;
+            row-gap: 10px;
+            img {
+                width: 150px;
+                height: 250px;
+                justify-content: center;
+                border-style: none;
+                align-items: center;
+                margin: 10px 10px;
+                transition: 0.3;
+                &:hover {
+                    // width: 170px;
+                    // height: 270px;
+                    transition: transform .3 ease;
+                }
+        
+            }
+            // p{
+
+            // }
+        }
+    }
+
+}

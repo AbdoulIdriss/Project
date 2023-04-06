@@ -1,0 +1,27 @@
+
+.site-header{
+
+    .navigation{
+
+        .nav {
+            
+            display:flex;
+            justify-content: space-around;
+                        
+
+            li{
+                a{
+                    color:white;
+                    text-decoration: none;
+                }
+                #log-form {
+                    padding: 7px;
+                    box-sizing: border-box ;
+                    border: 2px solid white;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+    }
+}

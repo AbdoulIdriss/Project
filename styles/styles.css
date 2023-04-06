@@ -1,0 +1,156 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+* {
+  color: white;
+  font-family: "Red Hat display", sans-serif;
+  max-width: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body {
+  background-color: #3e5569;
+  max-width: 100%;
+}
+
+.site-header .navigation .nav {
+  display: flex;
+  justify-content: space-around;
+}
+.site-header .navigation .nav li a {
+  color: white;
+  text-decoration: none;
+}
+.site-header .navigation .nav li #log-form {
+  padding: 7px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid white;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  /* Hide the images by default */
+}
+.slideshow-container .mySlides-fade {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.slideshow-container .mySlides-fade img {
+  width: 150px;
+  margin: 50px;
+}
+.slideshow-container .mySlides-fade .text {
+  width: 25%;
+}
+.slideshow-container .prev {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.slideshow-container .next {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot .active {
+  background-color: #717171;
+}
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.recommendations {
+  display: flex;
+  justify-content: space-between;
+}
+.recommendations h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.recommended-books {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid white;
+  row-gap: 10px;
+}
+.recommended-books div a {
+  text-decoration: none;
+  margin: auto 32px;
+  row-gap: 10px;
+}
+.recommended-books div a img {
+  width: 150px;
+  height: 250px;
+  justify-content: center;
+  border-style: none;
+  align-items: center;
+  margin: 10px 10px;
+  transition: 0.3;
+}
+.recommended-books div a img:hover {
+  transition: transform 0.3 ease;
+}/*# sourceMappingURL=styles.css.map */
