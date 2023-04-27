@@ -36,7 +36,6 @@ body {
 .slideshow-container {
   max-width: 100%;
   box-sizing: border-box;
-  border: 1px solid white;
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -72,6 +71,9 @@ body {
      -moz-user-select: none;
           user-select: none;
 }
+.slideshow-container .prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 .slideshow-container .next {
   cursor: pointer;
   top: 50%;
@@ -89,6 +91,10 @@ body {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+.slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -123,8 +129,14 @@ body {
 .recommendations {
   display: flex;
   justify-content: space-between;
+  margin-left: 75px;
+  margin-right: 70px;
 }
-.recommendations h1 {
+.recommendations a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.recommendations a h1 {
   font-size: 20px;
   font-weight: 400;
 }
@@ -134,23 +146,27 @@ body {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  border: 1px solid white;
-  row-gap: 10px;
+}
+.recommended-books div:hover {
+  background-color: grey;
 }
 .recommended-books div a {
   text-decoration: none;
+  display: block;
   margin: auto 32px;
-  row-gap: 10px;
+  justify-content: center;
+  border-style: none;
+  align-items: center;
 }
 .recommended-books div a img {
   width: 150px;
   height: 250px;
-  justify-content: center;
-  border-style: none;
-  align-items: center;
   margin: 10px 10px;
   transition: 0.3;
 }
 .recommended-books div a img:hover {
   transition: transform 0.3 ease;
+}
+.recommended-books div a p {
+  padding-left: 10px;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,35 +1,43 @@
 .recommendations {
     display: flex;
     justify-content: space-between;
-    h1 {
-        font-size: 20px;
-        font-weight: 400;
+    margin-left: 75px;
+    margin-right: 70px;
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        h1 {
+            font-size: 20px;
+            font-weight: 400;
+        }
     }
 }
 .recommended-books {
     width: 100%;
     display: flex;
-    // grid-template-columns: auto auto auto auto auto;
     justify-content: center;
     box-sizing: border-box;
-    border: 1px solid white;
-    row-gap: 10px;
+    // border: 1px solid white;
 
     div {
+
+        &:hover {
+            background-color: grey;
+        }
 
         // display: 
     
         a {
             text-decoration: none;
-            // display: flex;
+            display: block;
             margin: auto 32px;
-            row-gap: 10px;
+            // row-gap: 10px;
+            justify-content: center;
+            border-style: none;
+            align-items: center;
             img {
                 width: 150px;
                 height: 250px;
-                justify-content: center;
-                border-style: none;
-                align-items: center;
                 margin: 10px 10px;
                 transition: 0.3;
                 &:hover {
@@ -39,9 +47,10 @@
                 }
         
             }
-            // p{
-
-            // }
+            p{
+                padding-left: 10px;
+                // width: 50%;
+            }
         }
     }
 

@@ -45,14 +45,8 @@ function showSlides()
 }
 
 let prevNext = document.querySelector("prev");
-const flash = `#fff`;
-function change (e) {
+
   // prevNext.removeEventListener("click", change);
-  prevNext.addEventListener("click",   () => {
-    prevNext.style.backgroundColor = "flash"
+  prevNext.addEventListener("click",   (e) => {
+  e.target.style.backgroundColor = "#fff";
   });
-  // e.target.style.backgroundColor = "flash"
-} 
-  // prevNext.addEventListener("click", change);
-  // prevNext.style.backgroundColor = "flash";
-// prevNext.addeventListener("click")
