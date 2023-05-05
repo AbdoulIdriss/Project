@@ -19,17 +19,57 @@ body {
 
 .site-header .navigation .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  letter-spacing: 2px;
+  list-style: none;
+}
+.site-header .navigation .nav * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
 }
 .site-header .navigation .nav li a {
-  color: white;
+  position: relative;
+  color: #fff;
   text-decoration: none;
 }
-.site-header .navigation .nav li #log-form {
-  padding: 7px;
-  box-sizing: border-box;
-  border: 2px solid white;
-  border-radius: 20px;
+.site-header .navigation .nav li a:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  transition: all 0.35s ease;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  border-right: 3px solid grey;
+  border-top: 3px solid grey;
+  transform: translate(-100%, 50%);
+}
+.site-header .navigation .nav li a:after {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  transition: all 0.35s ease;
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  border-left: 3px solid grey;
+  border-bottom: 3px solid grey;
+  transform: translate(100%, -50%);
+}
+.site-header .navigation .nav li a:hover {
+  color: #ffffff;
+}
+.site-header .navigation .nav li a:hover:before {
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+.site-header .navigation .nav li a:hover:after {
+  transform: translate(0%, 0%);
+  opacity: 1;
 }
 
 /* Slideshow container */

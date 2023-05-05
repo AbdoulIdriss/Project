@@ -23,7 +23,7 @@ let parsedData = JSON.parse(retrieveData);
 
 //retriving the email and password only
 let {email, password} = parsedData;
-console.log('this is the data comiung from our local storage',{email, password});
+console.log('this is the data coming from our local storage',{email, password});
 
 
 //submit button
@@ -36,6 +36,20 @@ submite.addEventListener('submit', (e) =>{
 
     let loginemail = document.getElementById("submite-mail").value;
     let loginpassword = document.getElementById("submitpw").value;
+
+    let upperCase = /[A-Z]/;
+    let lowerCase = /[a-z]/;
+    let number = /[0-9]/;
+    let specialCharacter = /[^A-Za-z0-9]/;
+
+    if (loginemail == 0 && loginpassword==0) { alert('Please enter a password');}
+    else if(loginemail == 0) {alert('Enter an email');}
+    else if(loginpassword.length == 0) {alert('Enter password');}
+    else if(loginpassword.length < 8) {alert('Password must contain atleast 8 characters');}
+    else if(!loginpassword.match(upperCase)) {alert('Add an uppercase letter');}
+    else if(!loginpassword.match(lowerCase)) {alert('Add a lower case');}
+    else if (!loginpassword.match(number)) {alert('add a number');}
+    else if (!loginpassword.match(specialCharacter)) {alert('Add atleast one special character');}
 
     //data from local storage
 
