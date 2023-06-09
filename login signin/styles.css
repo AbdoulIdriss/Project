@@ -50,7 +50,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   font-size: 18px;
-  color: white;
+  color: bl;
   background-color: white;
 }
 #login form .form-group i {
@@ -62,8 +62,8 @@ body {
   height: 100%;
   outline: none;
   border: none;
-  background-color: transparent;
-  color: white;
+  background-color: white;
+  color: black;
 }
 #login form input[type=submit] {
   width: 100px;
@@ -74,7 +74,6 @@ body {
   background-color: rgb(106, 106, 238);
   border-radius: 8px;
   border: none;
-  color: white;
   font-weight: bold;
 }
 #login form input[type=submit]:hover {
@@ -168,4 +167,5 @@ body {
 
 #disabled {
   display: none;
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=styles.css.map */

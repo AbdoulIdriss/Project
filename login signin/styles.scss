@@ -33,7 +33,6 @@ body {
         display: grid;
         margin: 30px;
         justify-content: center;
-        // color: black;
         background-color: white;
 
         h1 {
@@ -57,7 +56,7 @@ body {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
             border-radius: 4px;
             font-size: 18px;
-            color: white;
+            color: bl;
             background-color: white;
 
             i {
@@ -71,9 +70,8 @@ body {
                 height: 100%;
                 outline: none;
                 border: none;
-                background-color: transparent;
-                color: white;
-
+                background-color: white;
+                color: black;
             }
         }
 
@@ -88,7 +86,6 @@ body {
             border-radius: 8px;
             border: none;
             // color: rgb(238, 238, 238);
-            color: white;
             font-weight: bold;
 
             &:hover {

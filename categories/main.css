@@ -1,0 +1,137 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins' sans-serif;
+    background-color: #3e5569;
+    font-family: 'Red Hat display', sans-serif;
+}
+
+.navigation {
+    background-color: #3e5569;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    
+}
+.navigation ul{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    padding-left: 60rem;
+}
+.navigation ul li {
+    display: flex;
+    letter-spacing: 2px;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.poet {
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+.container .image{
+    display: none;
+}
+.container .image img{
+width: 100%;
+height: 90vh;
+object-fit: cover;
+border-radius: 16px;
+}
+.container .image img a{
+    line-height: none;
+    text-decoration: none;
+}
+.ake{
+    width: 70%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.ake img{
+    width: 80%;
+    cursor: pointer;
+    transition: 1s ease;
+    height: 40vh;
+}
+.ake img p a{
+    list-style: none;
+    text-decoration: none;
+}
+.ake img:hover{
+    transform: scale(0.8);
+    box-shadow: 0 32px 75px rgb(68, 77, 136, 0.2);
+}
+
+
+/* css rating*/
+.rating-box{
+    position: relative;
+    background: transparent;
+    padding: 25px 35px;
+    border-radius: 100px;
+    box-shadow:  0 5px 10px rgba(red, green, blue, alpha);
+    max-width: 30%;
+    max-width: 1122px;
+}
+.rating-box{
+background: #067;
+box-shadow: 86px;
+}
+.rating-box .stars{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: yellow;
+}
+.stars strong {
+color: rgb(18, 18, 17);
+font-size: 35px;
+cursor: pointer;
+transition: color 0.3 ease;
+}
+.stars strong.active{
+    color: yellow;
+}
+
+/* footer*/
+
+.footer{
+    background-color: bisque;
+    height: 50vh;
+    width: 100%;
+}
+.socialmedia{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 2px;
+    gap: 2px;
+    font-size: 80px;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

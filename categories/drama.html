@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="drama.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="text">
+        <h1><a href="/index.html"> Home</a></h1>
+    </div>
+    <header>
+        <h1>TOP DRAMA books of the week</h1>
+    </header>
+    <section>
+        <div class="product">
+            <picture>
+                <img src="/assets/imgs/African_Dominion__A_New_History_of_Empire_in_Early_and_Medieval_West_Africa_150x250.png">
+                
+            </picture>
+            <p>
+                <a href="/African Dominion_ A New History of Empire in Early and Medieval West Africa - PDF Room.pdf">Read more</a>
+            </p>
+            <div class="detail">
+                <p>
+                </p>
+            </div>
+            <div class="button">
+            </div>
+        </div>
+        <div class="product">
+            <picture>
+                <img src="/assets/imgs/continent_150x250.jpg">
+            </picture>
+            <p>
+                <a href="/assets/imgs/The Shackled Continent - Power, Corruption, and African Lives - PDF Room.pdf">read more</a>
+            </p>
+            <div class="detail">
+                <p>
+                </p>
+            </div>
+            <div class="button">
+            </div>
+        </div>
+        <div class="product">
+            <picture>
+                <img src="/assets/imgs/The Dangerous Bridge_ A Cameroonian Story.jpeg">
+            </picture>
+            <p>
+                <a href="girls.html">read more</a>
+            </p>
+            <div class="detail">
+                <p>
+                </p>
+            </div>
+            <div class="button">
+            </div>
+        </div>
+        <div class="product">
+            <picture>
+                <img src="./assets/images/melly3.jpg">
+            </picture>
+            <p>
+                <a href="girls.html">read more</a>
+            </p>
+            <div class="detail">
+                <p>
+                </p>
+            </div>
+            <div class="button">
+            </div>
+        </div>
+        <p>
+            <a href="girls.html">read more</a>
+        </p>
+        
+    </section>
+        
+    </section>
+
+    <script>
+        let span = document.getElementsByTagName('span');
+        let product = document.getElementsByClassName('product');
+       let product_page =(product.length/4);
+        const i = 0;
+        let moverPer = 25.34;
+        let maxMove = 203;
+
+        {
+            moverPer = 50.36;
+            maxMove = 504;
+        }
+        let right_mover = ()=>{
+            i = i + moverPer;
+            if(product == i){i=0}
+            for(const i of product)
+            {
+                if(i > maxMove){i = i -moverPer;}
+                i.style.left = "-" + i + "%";
+            }
+        }
+        let left_mover =()=>{
+            i + i +moverPer;
+            if(i<=0){i = 0}
+            for(const z of product)
+            {
+                if(product_page > i)
+                i.style.left = "-" + 1 + "%";
+            }
+        }
+
+        span[1].onclick =()=>{right_mover();}
+        span[0].onclick =()=>{left_mover();}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ct.css">
+    <link rel='stylesheet' type="text/css" <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form name="custom_form" onsubmit="return validateForm()" action="valid.html">
+            <div class="form_box">
+                <div class="input-row">
+                    <h1>contact us</h1>
+                    <input type="text" placeholder="name" name="name">
+                    <span class="error">please enter your name</span>
+                </div>
+                <div class="input-row">
+                    <input type="text" placeholder="email" name="email">
+                    <span class="error">please enter a valid email</span>
+                </div>
+                <textarea placeholder="message" name="message"></textarea>
+                <span class="error">sent a message</span>
+                <div class="input-row">
+                    <label class="check_label" for="conditions"></label>
+                    <input type="checkbox" name="conditions" id="conditions">
+                    <span class="error">please accept all terms and conditions</span>
+                </div>
+                <input type="submit" value="submit" id="submit">
+            </div>
+            <div class="footer" >
+              <div class="socialmedia">
+                  <i style="color: skyblue;"  class="fa-brands fa-twitter"></i>
+                  <i style="color: pink;"  class="fa-brands fa-instagram"></i>
+                  <i style="color: white;" class="fa-brands fa-facebook"></i>
+                  <i style="color: yellow;" class="fa-brands fa-snapchat"></i><br>
+                  <i style="color: red;" class="fa-brands fa-youtube"></i><br>
+                </div>  
+                  
+              </div>
+        </form>
+    </div>
+
+    <script src="c.js"></script>
+    <script>
+    </script>
+</body>
+</html>

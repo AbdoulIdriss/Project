@@ -1,5 +1,6 @@
 .recommendations {
     display: flex;
+    flex-wrap: nowrap;
     // justify-content: space-between;
     margin-left: 45px;
     margin-right: 70px;
@@ -17,25 +18,22 @@
     // border: 1px solid white;
 
     div {
-        gap: 1rem ;
-    
+          display: flex;  
+          flex-wrap: nowrap;
         a {
             text-decoration: none;
-            display: block;
-            margin: auto 32px;
-            // row-gap: 10px;
+            display: inline-block;
+            margin: auto 20px;
             justify-content: center;
             border-style: none;
             align-items: center;
 
-            iframe {
-                display: none;
-            }
             img {
                 width: 150px;
                 height: 250px;
                 margin: 10px 10px;
                 transition: 0.3;
+                gap: 1rem;
                 &:hover {
                     width: 170px;
                     height: 270px;

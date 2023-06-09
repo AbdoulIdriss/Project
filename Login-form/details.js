@@ -30,7 +30,7 @@ console.log('this is the data coming from our local storage',{email, password});
 
 let submite = document.getElementById('signUp-forms');
 
-submite.addEventListener('submit', (e) =>{
+submite.addEventListener('submit', (e) => {
 
     //data from login form
 

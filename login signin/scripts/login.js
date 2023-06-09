@@ -17,60 +17,34 @@ function toogle() {
         signupform.setAttribute('id', 'disabled');
         loginform.setAttribute('id', 'login');
     })
-} `              `
+}
 
 toogle()
 
 
 let form1 = document.getElementById('signupform');
-console.log(form1);
 
 form1.addEventListener('submit', (e) => {
     function store() {
         e.preventDefault();
         let uname = document.getElementById('uname');
         let pass = document.getElementById('password');
-        let pass1 = document.getElementById('password1')
-        let email = document.getElementById('email')
-        let lowerCaseLetters = /[a-z]/g;
-        let upperCaseLetters = /[A-Z]/g;
-        let numbers = /[0-9]/g;
-        let error = document.getElementById('helper-text');
-        let special = /\W/g;
+        let email = document.getElementById('email');
+        let lowerCaseLetters = /[a-z]/;
+        let upperCaseLetters = /[A-Z]/;
+        let numbers = /[0-9]/;
+        let special = /\W/;
 
-        if (uname.value.length == 0) {
-            alert('Please enter your name');
-
-        } else if (pass.value.length == 0) {
-            alert('Password needed');
-
-        } else if (uname.value.length == 0 && pass.value.length == 0) {
-            alert('Please fill in username and password');
-
-        } else if (pass.value.length < 8) {
-            alert('Max of 8');
-
-        } else if (!pass.value.match(numbers)) {
-            alert('please add 1 number');
-
-        } else if (!pass.value.match(upperCaseLetters)) {
-            alert('please add 1 uppercase letter');
-
-        } else if (!pass.value.match(lowerCaseLetters)) {
-            alert('please add 1 lovercase letter');
-
-        } else if (!pass.value.match(special)) {
-            alert('please add 1 special character');
-
-        } else if (pass1.value.length == 0) {
-            alert('Please confirm password');
-
-        } else if (pass1.value !== pass.value) {
-            alert('Passwords dont match');
-
-        } else {
-
-
+        if (uname.value.length == 0) {alert('Name required');} 
+        else if (pass.value.length == 0) {alert('Password reauired');} 
+        else if(email.value.length == 0){alert('Email required');}
+        else if (uname.value.length == 0 && pass.value.length == 0 && email.value.length == 0) {alert('Email Name and Password required ');} 
+        else if (pass.value.length < 8) {alert('Minimum 8 characters');} 
+        else if (!pass.value.match(numbers)) { alert('Atleast one number required');} 
+        else if (!pass.value.match(upperCaseLetters)) { alert('Atleast one uppercase letter'); } 
+        else if (!pass.value.match(lowerCaseLetters)) {alert('Atleast one lowercase letter');} 
+        else if (!pass.value.match(special)) {alert('Atleast one special character');}
+        else {
             if (localStorage.getItem("userData") == null) {
                 let userData = [];
                 let user = {
@@ -91,15 +65,26 @@ form1.addEventListener('submit', (e) => {
                        password:pass.value
                     }
                     pdata.push(user)
-                    console.log(pdata);
+                    console.log(pdata)  
+
+                    //redirecting to the home page 
                     
-                
+
+                    // Window.location.assign("././index.html")
                 
             }
+            // Window.location.assign("././index.html")
             }}
             store();
     
-        })
+        });
+
+        // function redirect() {
+        //     if( store() == true){
+        //         windows.location.assign("index.html")
+        //     }
+        // }
+        // redirect(store);
 
                 // const hasrshedPas = CryptoJS.SHA256(pass).toString();
 
